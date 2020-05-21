@@ -220,6 +220,7 @@ else:
     print("="*75)
     print("\n"+"[AI] -> Replying ...\n")
     for k, v in results.items():
+        v = v.replace("}", "")
         print("   + Image: inputs/"+str(k)+" -> "+str(v))
     print("\n"+"="*75)
 
